@@ -1,0 +1,19 @@
+#pages
+app/app_pages/ExportData.py
+app/app_pages/temp_analysis.py
+app/navigation.py
+
+#environment variables
+.env
+
+#log files
+app.log
+
+#cache
+__pycache__
+handlers/__pycache__
+vector_search/__pycache__
+api/__pycache__
+
+#virtual environment
+bat-kawach-ebs-venv

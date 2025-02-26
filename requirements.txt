@@ -1,0 +1,7 @@
+fuzzywuzzy==0.18.0
+pandas==2.2.3
+pymongo==4.3.3
+python-dotenv==1.0.0
+python_dateutil==2.9.0
+streamlit==1.29.0
+weaviate_client==4.9.4
