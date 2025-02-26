@@ -1,12 +1,36 @@
-<style>
+<!-- <style>
     #fixed-image {
         position: relative;
         top: -3rem;
         z-index: 1000;
-        display: block;
+        display: flex;
         margin-left: auto;
         margin-right: auto;
         width: 20%;
         border-radius: 10px;
     }
+</style> -->
+
+<style>
+    .image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+        width: 100%;
+    }
+    
+    .image-pair {
+        max-width: 45%;
+        height: auto;
+        border-radius: 10px;
+        margin: 10px !important;
+    }
 </style>
+
+<div class="image-container">
+    <img src="../images/CMS.png" class="image-pair">
+    <img src="../images/BAT.png" class="image-pair">
+</div>

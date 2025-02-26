@@ -35,7 +35,8 @@ def display_image_and_intro():
         with open(BAT_LOGO_STYLE_HTML) as f:
             st.markdown(f.read(), unsafe_allow_html=True)
         
-        st.markdown(img_to_html(BAT_LOGO_PATH), unsafe_allow_html=True)
+        # st.markdown(img_to_html(CMS_LOGO_PATH), unsafe_allow_html=True)
+        # st.markdown(img_to_html(BAT_LOGO_PATH), unsafe_allow_html=True)
 
     except Exception as ex:
         logging.error(f'Error in display_image_and_intro: {ex}')
