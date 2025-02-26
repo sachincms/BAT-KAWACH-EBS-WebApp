@@ -14,8 +14,7 @@ CMS_LOGO_PATH = os.path.join('app', 'static', 'images', 'CMS.png')
 #HTML File Paths
 CONTAINER_STYLE_HTML = os.path.join(current_file_path, 'app',  'static', 'html', 'container_style.html')
 LINK_BUTTON_STYLE_HTML = os.path.join(current_file_path, 'app',  'static', 'html', 'link_button_style.html')
-BAT_LOGO_STYLE_HTML = os.path.join(current_file_path, 'app', 'static',  'html', 'bat_logo_style.html')
-CMS_LOGO_STYLE_HTML = os.path.join(current_file_path, 'app', 'static',  'html', 'cms_logo_style.html')
+LOGO_STYLE_HTML = os.path.join(current_file_path, 'app', 'static',  'html', 'logo_style.html')
 SEVERITY_LEGEND_HTML = os.path.join(current_file_path, 'app', 'static', 'html', 'severity_legend.html')
 IN_CONTAINER_DIVIDER_HTML = os.path.join(current_file_path, 'app', 'static', 'html', 'in_container_divider.html')
 

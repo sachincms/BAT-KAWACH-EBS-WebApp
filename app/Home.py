@@ -5,7 +5,7 @@ import sys
 current_path = os.path.abspath(__file__)
 root_path = os.path.dirname(os.path.dirname(current_path))
 sys.path.append(root_path)
-from config import BAT_LOGO_PATH, CMS_LOGO_PATH, SEVERITY_LEGEND_HTML, BAT_LOGO_STYLE_HTML, CMS_LOGO_STYLE_HTML, INTRO_MESSAGE, TIMESPAN_DICT, SEVERITY_LIST, PAGE_TITLE
+from config import BAT_LOGO_PATH, CMS_LOGO_PATH, SEVERITY_LEGEND_HTML, LOGO_STYLE_HTML, INTRO_MESSAGE, TIMESPAN_DICT, SEVERITY_LIST, PAGE_TITLE
 from utils.documents import filter_documents, sort_documents, display_documents
 from utils.images import img_to_html
 from utils.data import get_data
@@ -24,19 +24,16 @@ def display_legend():
 
 def display_image_and_intro():
     try:
-        # col1, col2 = st.columns(2)
-
-        # with open(CMS_LOGO_STYLE_HTML) as f:
-        #     st.markdown(f.read(), unsafe_allow_html=True)
-
-        # with col1:
-        #     st.markdown(img_to_html(CMS_LOGO_PATH), unsafe_allow_html=True)
+        _, col1, col2, _ = st.columns([4, 4, 4, 4])
         
-        with open(BAT_LOGO_STYLE_HTML) as f:
+        with open(LOGO_STYLE_HTML) as f:
             st.markdown(f.read(), unsafe_allow_html=True)
+
+        with col1:
+            st.markdown(img_to_html(CMS_LOGO_PATH), unsafe_allow_html=True)
         
-        # st.markdown(img_to_html(CMS_LOGO_PATH), unsafe_allow_html=True)
-        # st.markdown(img_to_html(BAT_LOGO_PATH), unsafe_allow_html=True)
+        with col2:
+            st.markdown(img_to_html(BAT_LOGO_PATH), unsafe_allow_html=True)
 
     except Exception as ex:
         logging.error(f'Error in display_image_and_intro: {ex}')
